@@ -2,8 +2,8 @@
 This is the code to my website, [https://itstom.co](itstom.co). This is a personal project I used to build my web 
 development skills.
 
-## Screenshots
-![](static/assets/readme-screenshot.png)
+## Screenshot
+![screenshot](static/assets/readme-screenshot.png)
 
 ### Built with
 
@@ -26,4 +26,3 @@ development skills.
 2. Clone the repository to your localhost
 3. Install dependencies (yarn install)
 4. Use gatsby-cli to start in development mode ([docs](https://www.gatsbyjs.org/docs/))
-5. Have fun.
