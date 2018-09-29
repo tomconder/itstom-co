@@ -32,7 +32,7 @@ const Footer = () => (
 . The code for this website is open source and available on
       {' '}
       <a
-        href="https://github.com/tomconder"
+        href="https://github.com/tomconder/itstom-co"
         target="_blank"
         rel="noopener noreferrer"
       >
