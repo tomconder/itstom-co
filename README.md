@@ -22,7 +22,7 @@ development skills.
 
 ## Setup
 
-1. Install gatsby-cli ([docs](https://www.gatsbyjs.org/tutorial/part-one/#using-gatsby-starters))
+1. Install gatsby-cli ([docs](https://www.gatsbyjs.org/tutorial/part-zero/#install-the-gatsby-cli))
 2. Clone the repository to your localhost
 3. Install dependencies (yarn install)
 4. Use gatsby-cli to start in development mode ([docs](https://www.gatsbyjs.org/docs/))
