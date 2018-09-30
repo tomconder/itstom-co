@@ -1,5 +1,5 @@
 # itstom-co
-This is the code to my website, [https://itstom.co](itstom.co). This is a personal project I used to build my web 
+This is the code to my website, [itstom.co](https://itstom.co). This is a personal project I used to build my web 
 development skills.
 
 ## Screenshot
