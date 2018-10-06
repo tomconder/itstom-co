@@ -5,7 +5,7 @@ import Icon from './icon';
 const Header = () => (
   <header>
     <div className={styles.title}>
-      IT&apos;
+      IT&apos;S TOM
     </div>
     <div className={styles.filler} />
     <div className={styles.social}>
