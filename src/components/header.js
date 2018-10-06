@@ -1,28 +1,23 @@
 import React from 'react';
 import styles from './header.module.scss';
+import Icon from './icon';
 
 const Header = () => (
   <header>
     <div className={styles.title}>
-      IT&apos;S TOM
+      IT&apos;
     </div>
     <div className={styles.filler} />
     <div className={styles.social}>
-      <a
-        href="https://twitter.com/tomconder"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Twitter
-      </a>
+      <Icon
+        url="https://twitter.com/tomconder"
+        text="Twitter"
+      />
       {' '}
-      <a
-        href="https://github.com/tomconder"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Github
-      </a>
+      <Icon
+        url="https://github.com/tomconder"
+        text="Github"
+      />
     </div>
   </header>
 );
