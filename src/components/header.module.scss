@@ -25,4 +25,10 @@ header {
   padding-right: 40px;
   text-align: center;
   vertical-align: middle;
+
+  .link {
+    display: inline-block;
+    margin-right: 1rem;
+    text-align: center;
+  }
 }

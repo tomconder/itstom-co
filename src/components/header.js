@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './header.module.scss';
-import Icon from './icon';
+import TwitterIcon from './twitterIcon';
+import GithubIcon from './githubicon';
 
 const Header = () => (
   <header>
@@ -9,14 +10,12 @@ const Header = () => (
     </div>
     <div className={styles.filler} />
     <div className={styles.social}>
-      <Icon
+      <TwitterIcon
         url="https://twitter.com/tomconder"
-        text="Twitter"
       />
       {' '}
-      <Icon
+      <GithubIcon
         url="https://github.com/tomconder"
-        text="Github"
       />
     </div>
   </header>
