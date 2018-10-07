@@ -5,6 +5,7 @@ import { injectGlobal } from 'styled-components';
 import Helmet from 'react-helmet';
 import Header from './header';
 import Footer from './footer';
+import styles from './layout.module.scss';
 
 injectGlobal`
   body {
@@ -13,12 +14,7 @@ injectGlobal`
 `;
 
 const Layout = ({ children }) => (
-  <div style={{
-    display: 'flex',
-    flexDirection: 'column',
-    minHeight: '100vh',
-  }}
-  >
+  <div className={styles.base}>
     <Helmet>
       <meta charSet="utf-8" />
       <meta name="description" content="The personal web page of Tom Conder" />

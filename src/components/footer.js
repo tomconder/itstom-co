@@ -1,19 +1,9 @@
 import React from 'react';
+import styles from './footer.module.scss';
 
 const Footer = () => (
-  <footer style={{
-    padding: '20px',
-    flexDirection: 'row',
-  }}
-  >
-    <div
-      className="footer"
-      color="accent"
-      style={{
-        padding: '0 0 .5em',
-        textAlign: 'center',
-      }}
-    >
+  <footer>
+    <div className={styles.footer}>
       Built with  with
       {' '}
       <a

@@ -1,21 +1,11 @@
 import React from 'react';
 import Layout from '../components/layout';
+import styles from './404.module.scss';
 
 export default () => (
   <Layout>
-    <main
-      className="content"
-      style={{
-        alignItems: 'center',
-        display: 'flex',
-        flex: '1',
-        justifyContent: 'center',
-      }}
-    >
-      <div style={{
-        padding: '20px',
-      }}
-      >
+    <main className={styles.main}>
+      <div className={styles.content}>
         <h2>Oops! That isn&apos;t right...</h2>
       </div>
     </main>
