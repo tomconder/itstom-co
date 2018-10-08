@@ -3,7 +3,7 @@ import React from 'react';
 import * as PropTypes from 'prop-types';
 import { injectGlobal } from 'styled-components';
 import Helmet from 'react-helmet';
-import Header from './header';
+import { Header } from './header';
 import Footer from './footer';
 import styles from './layout.module.scss';
 
