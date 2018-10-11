@@ -1,17 +1,18 @@
 import React from 'react';
-import * as PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import { GitHub } from 'react-feather';
-import { link } from './Header.module.scss';
+import styles from './Header.module.scss';
 
 const GithubIcon = ({ url }) => (
   <a
     aria-label="github"
-    className={link}
+    className={styles.link}
     href={url}
     rel="noopener noreferrer"
     target="_blank"
   >
     <GitHub size={24} />
+    <span className={styles.name}>tomconder</span>
   </a>
 );
 

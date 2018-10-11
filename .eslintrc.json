@@ -1,7 +1,15 @@
 {
-    "extends": "airbnb",
+    "extends": ["airbnb", "prettier", "prettier/react"],
+    "plugins": ["react", "prettier"],
     "rules": {
-        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-        "no-unused-expressions": ["error", { "allowTaggedTemplates": true }]
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [".js", ".jsx"]
+            }
+        ],
+        "prettier/prettier": "error",
+        "no-unused-expressions": ["error", { "allowTaggedTemplates": true }],
+        "max-len": ["error", 80]
     }
 }

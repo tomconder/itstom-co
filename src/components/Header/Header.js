@@ -1,21 +1,16 @@
 import React from 'react';
 import styles from './Header.module.scss';
-import Twittericon from './TwitterIcon';
+import TwitterIcon from './TwitterIcon';
 import GithubIcon from './GithubIcon';
+import Avatar from './Avatar';
 
 const Header = () => (
   <header>
-    <div className={styles.title}>
-      IT&apos;S TOM
-    </div>
+    <Avatar />
     <div className={styles.filler} />
     <div className={styles.social}>
-      <Twittericon
-        url="https://twitter.com/tomconder"
-      />
-      <GithubIcon
-        url="https://github.com/tomconder"
-      />
+      <TwitterIcon url="https://twitter.com/tomconder" />
+      <GithubIcon url="https://github.com/tomconder" />
     </div>
   </header>
 );

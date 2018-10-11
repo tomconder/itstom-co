@@ -1,9 +1,14 @@
-footer {
-  padding: 20px;
-  flex-direction: row;
-}
+$dusty-gray: #999;
 
 .footer {
-  padding: 0 0 .5em;
+  padding: 20px;
+  flex-direction: row;
   text-align: center;
+
+  .note {
+    color: $dusty-gray;
+    padding: 0 0 .5em;
+    line-height: 1.6;
+    font-size: .85em;
+  }
 }
