@@ -1,7 +1,7 @@
 import React from 'react';
 import * as PropTypes from 'prop-types';
 import { Twitter } from 'react-feather';
-import { link } from './header.module.scss';
+import { link } from './Header.module.scss';
 
 const TwitterIcon = ({ url }) => (
   <a

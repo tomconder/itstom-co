@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './header.module.scss';
-import Twittericon from './twittericon';
-import GithubIcon from './githubicon';
+import styles from './Header.module.scss';
+import Twittericon from './TwitterIcon';
+import GithubIcon from './GithubIcon';
 
 const Header = () => (
   <header>
