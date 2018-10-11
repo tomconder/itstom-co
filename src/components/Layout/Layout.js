@@ -2,8 +2,8 @@ import React from 'react';
 import * as PropTypes from 'prop-types';
 import { injectGlobal } from 'styled-components';
 import Helmet from 'react-helmet';
-import { Header } from '../Header/index';
-import Footer from '../Footer/index';
+import { Header } from '../Header';
+import Footer from '../Footer';
 import styles from './Layout.module.scss';
 
 injectGlobal`
