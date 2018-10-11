@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import * as PropTypes from 'prop-types';
 import { injectGlobal } from 'styled-components';
@@ -13,22 +12,26 @@ injectGlobal`
   }
 `;
 
-const Layout = ({ children }) => (
-  <div className={styles.base}>
-    <Helmet>
-      <meta charSet="utf-8" />
-      <meta name="description" content="The personal web page of Tom Conder" />
-      <html lang="en" />
-      <lang>US-en</lang>
-      <title>It's Tom</title>
-      <link rel="canonical" href="https://itstom.co/" />
-    </Helmet>
+const Layout = ({ children }) => {
+  const title = "Hi, it's Tom";
 
-    <Header />
-    { children }
-    <Footer />
-  </div>
-);
+  return (
+    <div className={styles.base}>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <meta name="description" content="The personal web page of Tom Conder" />
+        <html lang="en" />
+        <lang>US-en</lang>
+        <title>{ title }</title>
+        <link rel="canonical" href="https://itstom.co/" />
+      </Helmet>
+
+      <Header />
+      { children }
+      <Footer />
+    </div>
+  );
+};
 
 Layout.propTypes = {
   children: PropTypes.node,
