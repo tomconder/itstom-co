@@ -1,6 +1,6 @@
 import React from 'react';
 import * as PropTypes from 'prop-types';
-import { Github } from 'react-feather';
+import { GitHub } from 'react-feather';
 import { link } from './Header.module.scss';
 
 const GithubIcon = ({ url }) => (
@@ -11,7 +11,7 @@ const GithubIcon = ({ url }) => (
     rel="noopener noreferrer"
     target="_blank"
   >
-    <Github size={24} />
+    <GitHub size={24} />
   </a>
 );
 

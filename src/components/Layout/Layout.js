@@ -21,8 +21,7 @@ const Layout = ({ children }) => {
         <meta charSet="utf-8" />
         <meta name="description" content="The personal web page of Tom Conder" />
         <html lang="en" />
-        <lang>US-en</lang>
-        <title>{ title }</title>
+        <title lang="en">{ title }</title>
         <link rel="canonical" href="https://itstom.co/" />
       </Helmet>
 

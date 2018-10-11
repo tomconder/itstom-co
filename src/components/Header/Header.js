@@ -13,7 +13,6 @@ const Header = () => (
       <Twittericon
         url="https://twitter.com/tomconder"
       />
-      {' '}
       <GithubIcon
         url="https://github.com/tomconder"
       />
