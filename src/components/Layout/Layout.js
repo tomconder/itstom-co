@@ -13,7 +13,7 @@ injectGlobal`
 `;
 
 const Layout = ({ children }) => {
-  const title = "Hi, it's Tom";
+  const title = "It's Tom";
 
   return (
     <div className={styles.base}>
