@@ -18,12 +18,25 @@ development skills.
 
 * [gatsby-plugin-manifest](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-manifest)
 * [gatsby-plugin-offline](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-offline)
+* [gatsby-plugin-purgecss](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-purgecss)
 * [gatsby-plugin-react-helmet](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-react-helmet)
 * [gatsby-plugin-sass](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-sass)
 
 ## Setup
 
-1. Install gatsby-cli ([docs](https://www.gatsbyjs.org/tutorial/part-zero/#install-the-gatsby-cli))
-2. Clone the repository to your localhost
-3. Install dependencies (yarn install)
-4. Use gatsby-cli to start in development mode ([docs](https://www.gatsbyjs.org/docs/))
+``` bash
+# install gatsby's command line tool
+$ npm install --global gatsby-cli
+
+# install dependencies 
+$ yarn install
+
+# serve with hot reload at localhost:8000
+$ gatsby develop
+
+# build for production at localhost:9000
+$ gatsby build
+$ gatsby server
+```
+
+For detailed explanation on the gatsby cli, check out the [Gatsby docs](https://www.gatsbyjs.org/docs/).

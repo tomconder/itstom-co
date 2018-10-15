@@ -1,0 +1,13 @@
+$dusty-gray: #999;
+$margin: 0 0 0 .5em;
+
+.title {
+  float: left;
+  flex-shrink: 0;
+  padding: 0;
+  vertical-align: top;
+}
+
+.name {
+  color: #777;
+}
