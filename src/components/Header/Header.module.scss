@@ -1,5 +1,12 @@
 $medium-breakpoint: 480px;
-$margin: 0 0 0 .5em;
+$margin-name: 0 0 0 .5em;
+$margin-header: 1.2rem auto 0;
+
+.main {
+  margin: $margin-header;
+  max-width: 49rem;
+  width: 90%;
+}
 
 header {
   display: flex;
@@ -29,7 +36,7 @@ header {
     }
 
     .name {
-      margin: $margin;
+      margin: $margin-name;
       vertical-align: top;
 
 
