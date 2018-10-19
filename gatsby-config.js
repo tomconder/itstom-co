@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 module.exports = {
   plugins: [
     {
@@ -16,5 +18,11 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     'gatsby-plugin-purgecss',
+    {
+      resolve: 'gatsby-plugin-gtag',
+      options: {
+        trackingId: process.env.GOOGLE_ANALYTICS_ID,
+      },
+    },
   ],
 };
