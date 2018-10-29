@@ -1,15 +1,77 @@
 {
-    "extends": ["airbnb", "prettier", "prettier/react", "plugin:jsx-a11y/recommended"],
-    "plugins": ["react", "prettier", "jsx-a11y"],
-    "rules": {
-        "react/jsx-filename-extension": [
-            1,
-            {
-                "extensions": [".js", ".jsx"]
-            }
-        ],
-        "prettier/prettier": "error",
-        "no-unused-expressions": ["error", { "allowTaggedTemplates": true }],
-        "max-len": ["error", 80]
+  "parser": "babel-eslint",
+  "extends": [
+    "airbnb",
+    "eslint:recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:react/recommended"
+  ],
+  "plugins": [
+    "babel",
+    "graphql",
+    "import",
+    "jsx-a11y",
+    "react"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
     }
+  },
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "jest": true
+  },
+  "globals": {
+    "spyOn": true
+  },
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "no-unused-expressions": ["error", { "allowTaggedTemplates": true }],
+    "no-var": "error",
+    "no-unused-vars": 1,
+    "arrow-spacing": ["error", { "before": true, "after": true }],
+    "indent": ["error", 2],
+    "semi": ["error", "never"],
+    "max-len": ["error", { "code": 80 }],
+    "comma-dangle": ["error", {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "ignore"
+    }],
+    "template-curly-spacing": ["error", "always"],
+    "arrow-parens": ["error", "as-needed"],
+    "react/prop-types": [
+      "error",
+      {
+        "ignore": [
+          "children"
+        ]
+      }
+    ],
+    "react/display-name": [
+      "off"
+    ]
+  },
+  "overrides": [
+    {
+      "files": [
+        "packages/**/gatsby-browser.js",
+        "packages/gatsby/cache-dir/**/*"
+      ],
+      "env": {
+        "browser": true
+      },
+      "globals": {
+        "___loader": false,
+        "___emitter": false
+      }
+    }
+  ]
 }

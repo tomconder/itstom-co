@@ -1,7 +1,7 @@
-import React from 'react';
-import * as PropTypes from 'prop-types';
-import { Twitter } from 'react-feather';
-import styles from './Header.module.scss';
+import React from 'react'
+import * as PropTypes from 'prop-types'
+import { Twitter } from 'react-feather'
+import styles from './Header.module.scss'
 
 const TwitterIcon = ({ url }) => (
   <a
@@ -14,14 +14,14 @@ const TwitterIcon = ({ url }) => (
     <Twitter size={24} />
     <span className={styles.name}>@tomconder</span>
   </a>
-);
+)
 
 TwitterIcon.propTypes = {
   url: PropTypes.string,
-};
+}
 
 TwitterIcon.defaultProps = {
   url: '',
-};
+}
 
-export default TwitterIcon;
+export default TwitterIcon

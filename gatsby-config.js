@@ -1,4 +1,4 @@
-require('dotenv').config();
+require('dotenv').config()
 
 module.exports = {
   plugins: [
@@ -23,6 +23,7 @@ module.exports = {
     },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
+    'gatsby-plugin-styled-components',
     'gatsby-plugin-purgecss',
     {
       resolve: 'gatsby-plugin-gtag',
@@ -31,4 +32,4 @@ module.exports = {
       },
     },
   ],
-};
+}

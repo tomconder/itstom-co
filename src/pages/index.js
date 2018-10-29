@@ -1,10 +1,10 @@
-import React from 'react';
-import Layout from '../components/Layout';
-import styles from './index.module.scss';
-import tomcup from '../images/tomcup.png';
+import React from 'react'
+import Layout from '../components/Layout'
+import styles from './index.module.scss'
+import tomcup from '../images/tomcup.png'
 
-require('typeface-exo');
-require('typeface-roboto');
+require('typeface-exo')
+require('typeface-roboto')
 
 export default () => (
   <Layout>
@@ -21,4 +21,4 @@ export default () => (
       </div>
     </main>
   </Layout>
-);
+)

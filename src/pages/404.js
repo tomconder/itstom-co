@@ -1,6 +1,6 @@
-import React from 'react';
-import Layout from '../components/Layout/Layout';
-import styles from './404.module.scss';
+import React from 'react'
+import Layout from '../components/Layout/Layout'
+import styles from './404.module.scss'
 
 export default () => (
   <Layout>
@@ -10,4 +10,4 @@ export default () => (
       </div>
     </main>
   </Layout>
-);
+)
