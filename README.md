@@ -40,3 +40,23 @@ $ gatsby server
 ```
 
 For detailed explanation on the gatsby cli, check out the [Gatsby docs](https://www.gatsbyjs.org/docs/).
+
+## Lint Checks
+Run lint checks with yarn
+``` bash
+# run lint checks
+$ yarn lint
+
+# automatically fix fixable lint issues
+$ yarn lint:fix
+
+# run sass lint checks
+$ yarn lint:sass
+```
+
+## Tests
+Run tests with yarn.
+``` bash
+# run test
+$ yarn test
+```
