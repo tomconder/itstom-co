@@ -4,9 +4,9 @@ $dove-gray: #666;
 $margin: 0;
 
 .main {
-  display: flex;
   align-items: center;
-  flex: 1;
+  display: flex;
+  flex: 1 0 auto;
   justify-content: center;
 
   h2 {

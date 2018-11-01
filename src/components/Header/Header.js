@@ -5,7 +5,7 @@ import GithubIcon from './GithubIcon'
 import Avatar from './Avatar'
 
 const Header = () => (
-  <header className={styles.main}>
+  <header>
     <Avatar />
     <div className={styles.filler} />
     <div className={styles.social}>

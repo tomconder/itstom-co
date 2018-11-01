@@ -1,13 +1,13 @@
-$dusty-gray: #999;
+$boulder: #777;
 $margin: 0 0 0 .5em;
 
 .title {
-  float: left;
   flex-shrink: 0;
+  float: left;
   padding: 0;
   vertical-align: top;
 }
 
 .name {
-  color: #777;
+  color: $boulder;
 }

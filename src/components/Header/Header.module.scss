@@ -2,19 +2,15 @@ $medium-breakpoint: 480px;
 $margin-name: 0 0 0 .5em;
 $margin-header: 1.2rem auto 0;
 
-.main {
-  margin: $margin-header;
-  max-width: 49rem;
-  width: 90%;
-}
-
 header {
-  display: flex;
   align-items: center;
   flex-direction: row;
-  min-height: 64px;
+  flex-shrink: 0;
+  margin: $margin-header;
+  max-width: 49rem;
   padding: 0 16px;
   vertical-align: middle;
+  width: 90%;
 
   .filler {
     flex: 1 1 auto;
@@ -29,10 +25,10 @@ header {
     vertical-align: middle;
 
     .link {
+      border-bottom: 0;
       display: inline-block;
       margin-left: 1rem;
       text-align: center;
-      border-bottom: 0;
     }
 
     .name {

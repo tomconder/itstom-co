@@ -1,19 +1,19 @@
-$amethyst: #A661C2;
-$light-wisteria: #CFABDE;
+$amethyst: #a661c2;
+$light-wisteria: #cfabde;
 $margin: 0;
 
 .base {
   display: flex;
-  font-family: Roboto, sans-serif;
   flex-direction: column;
-  min-height: 100vh;
+  font-family: Roboto, sans-serif;
+  height: 100vh;
 
   &a {
+    border-bottom: 1px solid $light-wisteria;
     color: $amethyst;
     margin: $margin;
-    border-bottom: 1px solid $light-wisteria;
-    text-decoration: none;
     padding: 0;
+    text-decoration: none;
     vertical-align: baseline;
   }
 }
