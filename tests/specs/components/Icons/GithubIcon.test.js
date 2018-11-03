@@ -1,7 +1,7 @@
 import React from 'react'
 import Chance from 'chance'
 import { shallow } from 'enzyme'
-import { GithubIcon } from '../../../../src/components/Header'
+import { GithubIcon } from '../../../../src/components/Icons'
 
 describe('GithubIcon', () => {
   it('renders', () => {

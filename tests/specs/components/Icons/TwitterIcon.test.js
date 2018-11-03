@@ -1,7 +1,7 @@
 import React from 'react'
 import Chance from 'chance'
 import { shallow } from 'enzyme'
-import { TwitterIcon } from '../../../../src/components/Header'
+import { TwitterIcon } from '../../../../src/components/Icons'
 
 describe('TwitterIcon', () => {
   it('renders', () => {
