@@ -11,9 +11,18 @@ header {
   padding: 0 16px;
   vertical-align: middle;
   width: 90%;
+  height: 32px;
+  vertical-align: middle;
 
   .filler {
     flex: 1 1 auto;
+    text-align: center;
+  }
+
+  .link {
+    display: inline-block;
+    margin-left: 1rem;
+    border-bottom: 0;
     text-align: center;
   }
 }
@@ -24,13 +33,6 @@ header {
   padding-right: 1rem;
   text-align: center;
   vertical-align: middle;
-
-  .link {
-    display: inline-block;
-    margin-left: 1rem;
-    border-bottom: 0;
-    text-align: center;
-  }
 
   .name {
     margin: $margin-name;
