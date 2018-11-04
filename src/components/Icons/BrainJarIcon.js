@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const BrainJarIcon = ({size}) => (
+const BrainJarIcon = ({size, ...otherProps}) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={size}
@@ -12,6 +12,7 @@ const BrainJarIcon = ({size}) => (
     strokeWidth="2"
     strokeLinecap="round"
     strokeLinejoin="round"
+    {...otherProps}
   >
     <g transform="translate(-1496.898)">
       <clipPath id="a">

@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const MeepleGroupIcon = ({fill, size}) => (
+const MeepleGroupIcon = ({fill, size, ...otherProps}) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={size}
@@ -12,6 +12,7 @@ const MeepleGroupIcon = ({fill, size}) => (
     strokeWidth="2"
     strokeLinecap="round"
     strokeLinejoin="round"
+    {...otherProps}
   >
     <g transform="translate(-1496.903)">
       <clipPath id="a">
