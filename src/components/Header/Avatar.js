@@ -1,9 +1,10 @@
 import React from 'react'
 import styles from './Avatar.module.scss'
+import ItsTomIcon from '../Icons/ItsTomIcon'
 
 const Avatar = () => (
   <div className={styles.title}>
-    <span className={styles.name}>IT&apos;S TOM</span>
+    <ItsTomIcon size={32} aria-label="It's Tom" />
   </div>
 )
 

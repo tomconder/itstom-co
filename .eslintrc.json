@@ -38,7 +38,7 @@
     "arrow-spacing": ["error", { "before": true, "after": true }],
     "indent": ["error", 2],
     "semi": ["error", "never"],
-    "max-len": ["error", { "code": 80 }],
+    "max-len": ["error", {"ignoreTemplateLiterals": true, "ignoreStrings": true}],
     "comma-dangle": ["error", {
         "arrays": "always-multiline",
         "objects": "always-multiline",

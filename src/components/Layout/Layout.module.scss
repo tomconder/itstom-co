@@ -1,5 +1,5 @@
-$amethyst: #a661c2;
-$light-wisteria: #cfabde;
+$amethyst: #A661C2;
+$light-wisteria: #CFABDE;
 $margin: 0;
 
 .base {
@@ -9,9 +9,9 @@ $margin: 0;
   height: 100vh;
 
   &a {
-    border-bottom: 1px solid $light-wisteria;
     color: $amethyst;
     margin: $margin;
+    border-bottom: 1px solid $light-wisteria;
     padding: 0;
     text-decoration: none;
     vertical-align: baseline;

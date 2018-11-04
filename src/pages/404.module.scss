@@ -1,10 +1,14 @@
 .main {
-  align-items: center;
   display: flex;
+  align-items: center;
   flex: 1;
   justify-content: center;
 }
 
 .content {
   padding: 20px;
+}
+
+.message {
+  text-align: center;
 }
