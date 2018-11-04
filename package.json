@@ -10,7 +10,7 @@
     "url": "https://github.com/tomconder/itstom-co"
   },
   "scripts": {
-    "build": "gatsby build",
+    "build": "cross-env NODE_ENV=production gatsby build",
     "clean": "rimraf .cache public coverage",
     "develop": "gatsby develop",
     "lint": "eslint --ignore-path .gitignore -c .eslintrc.json --ext js,jsx .",
