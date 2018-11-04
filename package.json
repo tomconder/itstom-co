@@ -11,6 +11,7 @@
   },
   "scripts": {
     "build": "gatsby build",
+    "clean": "rimraf .cache public coverage",
     "develop": "gatsby develop",
     "lint": "eslint --ignore-path .gitignore -c .eslintrc.json --ext js,jsx .",
     "lint:fix": "eslint --ignore-path .gitignore -c .eslintrc.json --ext js,jsx --fix .",
@@ -68,6 +69,7 @@
     "jest": "^23.6.0",
     "jest-enzyme": "^7.0.0",
     "node-sass": "^4.9.3",
+    "rimraf": "^2.6.2",
     "sass-lint": "^1.12.1",
     "webpack": "^4.20.2"
   },
