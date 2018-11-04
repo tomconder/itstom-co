@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 module.exports = {
   plugins: [
     {
@@ -13,8 +15,21 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
+    {
+      resolve: 'gatsby-plugin-nprogress',
+      options: {
+        color: '#99ee99',
+      },
+    },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
+    'gatsby-plugin-styled-components',
     'gatsby-plugin-purgecss',
+    {
+      resolve: 'gatsby-plugin-gtag',
+      options: {
+        trackingId: process.env.GOOGLE_ANALYTICS_ID,
+      },
+    },
   ],
-};
+}

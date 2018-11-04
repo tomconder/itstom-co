@@ -1,22 +1,26 @@
-import React from 'react';
-import styles from './Footer.module.scss';
+import React from 'react'
+import styles from './Footer.module.scss'
 
 const Footer = () => (
-  <footer className={styles.footer}>
+  <footer>
     <div className={styles.note}>
-      Built with{' '}
+      Built with
+      {' '}
       <a
         href="https://www.gatsbyjs.org"
         target="_blank"
         rel="noopener noreferrer"
       >
         Gatsby
-      </a>{' '}
-      and{' '}
+      </a>
+      {' '}
+      and
+      {' '}
       <a href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
         React
       </a>
-      . The source code for this website is available on{' '}
+      . The source code for this website is available on
+      {' '}
       <a
         href="https://github.com/tomconder/itstom-co"
         target="_blank"
@@ -27,6 +31,6 @@ const Footer = () => (
       .
     </div>
   </footer>
-);
+)
 
-export default Footer;
+export default Footer

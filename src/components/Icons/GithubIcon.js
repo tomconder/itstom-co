@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { GitHub } from 'react-feather';
-import styles from './Header.module.scss';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { GitHub } from 'react-feather'
+import styles from '../Header/Header.module.scss'
 
 const GithubIcon = ({ url }) => (
   <a
@@ -14,14 +14,14 @@ const GithubIcon = ({ url }) => (
     <GitHub size={24} />
     <span className={styles.name}>tomconder</span>
   </a>
-);
+)
 
 GithubIcon.propTypes = {
   url: PropTypes.string,
-};
+}
 
 GithubIcon.defaultProps = {
   url: '',
-};
+}
 
-export default GithubIcon;
+export default GithubIcon

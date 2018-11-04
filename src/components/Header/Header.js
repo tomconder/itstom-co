@@ -1,8 +1,8 @@
-import React from 'react';
-import styles from './Header.module.scss';
-import TwitterIcon from './TwitterIcon';
-import GithubIcon from './GithubIcon';
-import Avatar from './Avatar';
+import React from 'react'
+import styles from './Header.module.scss'
+import TwitterIcon from '../Icons/TwitterIcon'
+import GithubIcon from '../Icons/GithubIcon'
+import Avatar from './Avatar'
 
 const Header = () => (
   <header>
@@ -13,6 +13,6 @@ const Header = () => (
       <GithubIcon url="https://github.com/tomconder" />
     </div>
   </header>
-);
+)
 
-export default Header;
+export default Header

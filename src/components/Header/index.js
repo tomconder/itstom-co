@@ -1,5 +1,4 @@
-import GithubIcon from './GithubIcon';
-import Header from './Header';
-import TwitterIcon from './TwitterIcon';
+import Avatar from './Avatar'
+import Header from './Header'
 
-export { GithubIcon, Header, TwitterIcon };
+export { Avatar, Header }
