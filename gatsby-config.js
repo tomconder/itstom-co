@@ -29,8 +29,11 @@ module.exports = {
       options: {
         postCssPlugins: [
           require('postcss-color-function'),
-          require('cssnano')(),
+          require('cssnano')({
+            preset: "advanced",
+          }),
         ],
+        precision: 8,
       },
     },
     {
