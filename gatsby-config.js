@@ -33,7 +33,6 @@ module.exports = {
             preset: "advanced",
           }),
         ],
-        precision: 8,
       },
     },
     {
