@@ -3,7 +3,7 @@ This is the code to my website, [itstom.co](https://itstom.co). This is a person
 development skills.
 
 ## Screenshot
-![screenshot](static/assets/readme-screenshot.png)
+![screenshot](screenshots/readme-screenshot.png)
 
 ### Built with
 
