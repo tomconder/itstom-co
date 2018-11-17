@@ -17,7 +17,8 @@
     "lint:fix": "eslint --ignore-path .gitignore -c .eslintrc.json --ext js,jsx --fix .",
     "lint:sass": "sass-lint --config sass-lint.yml --verbose --no-exit 'src/**/**.scss'",
     "serve": "gatsby serve",
-    "test": "cross-env NODE_ENV=test jest --no-cache"
+    "test": "cross-env NODE_ENV=test jest --no-cache",
+    "test:coverage": "cross-env NODE_ENV=test jest --no-cache --coverage"
   },
   "dependencies": {
     "classnames": "^2.2.6",
@@ -91,7 +92,6 @@
       "node_modules",
       ".cache"
     ],
-    "collectCoverage": true,
     "coverageDirectory": "coverage",
     "transformIgnorePatterns": [
       "node_modules/(?!(gatsby)/)"
