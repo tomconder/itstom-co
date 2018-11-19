@@ -24,17 +24,7 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     'gatsby-plugin-styled-components',
-    {
-      resolve: 'gatsby-plugin-postcss',
-      options: {
-        postCssPlugins: [
-          require('postcss-color-function'),
-          require('cssnano')({
-            preset: "advanced",
-          }),
-        ],
-      },
-    },
+    'gatsby-plugin-purgecss',
     {
       resolve: 'gatsby-plugin-gtag',
       options: {

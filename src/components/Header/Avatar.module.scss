@@ -1,12 +1,8 @@
-$boulder: #777;
+@import "../../styles/main";
 
 .title {
   flex-shrink: 0;
   float: left;
   padding: 0;
   vertical-align: top;
-}
-
-.name {
-  color: $boulder;
 }

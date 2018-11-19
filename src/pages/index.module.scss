@@ -1,6 +1,5 @@
-$medium-breakpoint: 480px;
-$small-breakpoint: 375px;
-$dove-gray: #666;
+@import "../styles/main";
+
 $margin: 0;
 
 .main {
@@ -9,10 +8,9 @@ $margin: 0;
   flex: 1 0 auto;
   justify-content: center;
 
-  h2 {
+  .lighter {
     color: $dove-gray;
     font-size: 2em;
-    font-weight: 300;
     line-height: 1.1;
 
     @media (max-width: $small-breakpoint) {
@@ -23,7 +21,6 @@ $margin: 0;
   h1 {
     color: $dove-gray;
     font-size: 3em;
-    font-weight: 800;
     line-height: .9;
 
     @media (max-width: $small-breakpoint) {
@@ -34,7 +31,7 @@ $margin: 0;
   .content {
     display: flex;
     flex-direction: row;
-    font-family: Exo, sans-serif;
+    font-family: $exo;
     max-width: 42rem;
     padding: 20px;
 

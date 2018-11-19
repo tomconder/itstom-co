@@ -1,6 +1,8 @@
+@import "../../styles/main";
+
 .base {
   display: flex;
   flex-direction: column;
-  font-family: Roboto, sans-serif;
+  font-family: $roboto;
   height: 100vh;
 }
