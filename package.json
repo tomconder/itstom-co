@@ -13,6 +13,7 @@
     "build": "cross-env NODE_ENV=production gatsby build",
     "clean": "rimraf .cache public coverage",
     "develop": "gatsby develop",
+    "deploy": "node scripts/deploy",
     "lint": "eslint --ignore-path .gitignore -c .eslintrc.json --ext js,jsx .",
     "lint:fix": "eslint --ignore-path .gitignore -c .eslintrc.json --ext js,jsx --fix .",
     "lint:sass": "sass-lint --config sass-lint.yml --verbose --no-exit 'src/**/**.scss'",
@@ -43,6 +44,7 @@
     "react-helmet": "^5.2.0",
     "react-test-renderer": "^16.6.0",
     "rimraf": "^2.6.2",
+    "sftp-sync-deploy": "^0.7.1",
     "styled-components": "^4.0.2",
     "typeface-exo": "0.0.61",
     "typeface-roboto": "0.0.54"
