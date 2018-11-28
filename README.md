@@ -1,4 +1,7 @@
 # itstom-co
+
+[![GitHub tag](https://img.shields.io/github/tag/tomconder/itstom-co.svg?style=flat-square)](https://github.com/tomconder/itstom-co/tags)[![License](https://img.shields.io/github/license/tomconder/itstom-co.svg?style=flat-square)](https://github.com/tomconder/itstom-co/blob/develop/LICENSE)
+
 This is the code to my website, [itstom.co](https://itstom.co). This is a personal project I used to build my web 
 development skills.
 
