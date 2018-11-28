@@ -19,11 +19,14 @@ development skills.
 
 ### Additional plugins and packages
 
+* [gatsby-plugin-gtag](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-gtag)
 * [gatsby-plugin-manifest](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-manifest)
+* [gatsby-plugin-nprogress](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-nprogress)
 * [gatsby-plugin-offline](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-offline)
 * [gatsby-plugin-purgecss](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-purgecss)
 * [gatsby-plugin-react-helmet](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-react-helmet)
 * [gatsby-plugin-sass](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-sass)
+* [gatsby-plugin-styled-components](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-styled-components)
 
 ## Setup
 
@@ -62,4 +65,14 @@ Run tests with yarn.
 ``` bash
 # run test
 $ yarn test
+
+# run test coverage
+$ yarn test:coverage
+```
+
+## Deploy
+Deploy using the deploy script.
+``` bash
+# deploy
+$ yarn deploy
 ```
