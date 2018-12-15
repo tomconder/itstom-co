@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from './Header.module.scss'
-import TwitterIcon from '../Icons/TwitterIcon'
-import GithubIcon from '../Icons/GithubIcon'
+import { GithubIcon, TwitterIcon } from '../Icons'
 import Avatar from './Avatar'
 
 const Header = () => (

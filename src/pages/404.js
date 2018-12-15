@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Layout from '../components/Layout'
 import styles from './404.module.scss'
-import BrainJarIcon from '../components/Icons/BrainJarIcon'
+import { BrainJarIcon } from '../components/Icons'
 
 export default () => (
   <Layout>
