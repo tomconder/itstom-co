@@ -6,7 +6,7 @@ const MugIcon = ({fill, size, ...otherProps}) => (
     xmlns="http://www.w3.org/2000/svg"
     width={size}
     height={size}
-    viewBox="0 0 100 100"
+    viewBox="0 0 112 112"
     fillRule="evenodd"
     clipRule="evenodd"
     strokeLinejoin="round"
@@ -14,9 +14,16 @@ const MugIcon = ({fill, size, ...otherProps}) => (
     {...otherProps}
   >
     <g transform="translate(-1496.9)">
-      <path fill={fill} d="M1496.9 0h100v100h-100z" />
+      <path
+        d="M1496.9 0h100v100h-100z"
+        fill={fill}
+      />
       <clipPath id="mug_svg__a">
-        <path d="M1496.9 0h100v100h-100z" />
+        <path
+          d="M1496.9 0h100v100h-100z"
+          height="100"
+          width="100`"
+        />
       </clipPath>
       <g clipPath="url(#mug_svg__a)">
         <ellipse
