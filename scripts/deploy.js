@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 const { deploy } = require('sftp-sync-deploy')
-require('dotenv').load()
+require('dotenv').config()
 
 let config = {
   host: process.env.SFTP_HOST,

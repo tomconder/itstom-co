@@ -24,7 +24,7 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "cross-env": "^5.2.0",
-    "dotenv": "^6.1.0",
+    "dotenv": "^7.0.0",
     "gatsby": "^2.0.0",
     "gatsby-link": "^2.0.6",
     "gatsby-plugin-gtag": "^1.0.3",
