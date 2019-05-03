@@ -1,6 +1,5 @@
 import React from "react"
 import PropTypes from 'prop-types'
-import MugIcon from './MugIcon'
 
 const ItsTomMugIcon = ({fill, size, ...otherProps}) => (
   <svg

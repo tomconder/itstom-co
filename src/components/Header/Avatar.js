@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styles from './Avatar.module.scss'
-import { ItsTomMugIcon, MugIcon } from '../Icons'
+import { ItsTomMugIcon } from '../Icons'
 
 const Avatar = () => (
   <div className={styles.title}>
