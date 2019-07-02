@@ -1,6 +1,4 @@
 import React from 'react'
-import 'typeface-exo'
-import 'typeface-roboto'
 
 import Layout from '../components/Layout'
 import styles from './index.module.scss'
