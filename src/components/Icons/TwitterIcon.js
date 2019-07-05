@@ -1,6 +1,6 @@
 import React from 'react'
 import * as PropTypes from 'prop-types'
-import { Twitter } from 'react-feather'
+import Twitter from 'react-feather/dist/icons/twitter'
 import styles from '../Header/Header.module.scss'
 
 const TwitterIcon = ({ url }) => (

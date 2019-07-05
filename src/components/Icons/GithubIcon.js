@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { GitHub } from 'react-feather'
+import GitHub from 'react-feather/dist/icons/github'
 import styles from '../Header/Header.module.scss'
 
 const GithubIcon = ({ url }) => (
