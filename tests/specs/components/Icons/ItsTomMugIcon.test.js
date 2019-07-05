@@ -2,15 +2,15 @@ import React from 'react'
 import Chance from 'chance'
 import { render, shallow } from 'enzyme'
 import { axe, toHaveNoViolations } from 'jest-axe'
-import { MugIcon } from '../../../../src/components/Icons'
+import { ItsTomMugIcon } from '../../../../src/components/Icons'
 
 expect.extend(toHaveNoViolations)
 
-describe('MugIcon', () => {
+describe('ItsTomMugIcon', () => {
   it('renders', () => {
     const size = Chance().natural({ max: 256 })
     const wrapper = shallow(
-      <MugIcon size={size} />
+      <ItsTomMugIcon size={size} />
     )
     expect(wrapper.find('svg').props().height).toEqual(size)
     expect(wrapper.find('svg').props().width).toEqual(size)
@@ -19,7 +19,7 @@ describe('MugIcon', () => {
   it('a11y', async () => {
     const size = Chance().natural({ max: 256 })
     const wrapper = render(
-      <MugIcon size={size} />,
+      <ItsTomMugIcon size={size} />,
     )
 
     const result = await axe(wrapper.html())

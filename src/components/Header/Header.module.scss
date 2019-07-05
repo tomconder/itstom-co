@@ -1,4 +1,5 @@
-$medium-breakpoint: 480px;
+@import "../../styles/main";
+
 $margin-name: 0 0 0 .5em;
 $margin-header: 1.2rem auto 0;
 
@@ -16,6 +17,13 @@ header {
     flex: 1 1 auto;
     text-align: center;
   }
+
+  .link {
+    display: inline-block;
+    border-bottom: 0;
+    margin-left: 1rem;
+    text-align: center;
+  }
 }
 
 .social {
@@ -24,13 +32,6 @@ header {
   padding-right: 1rem;
   text-align: center;
   vertical-align: middle;
-
-  .link {
-    display: inline-block;
-    margin-left: 1rem;
-    border-bottom: 0;
-    text-align: center;
-  }
 
   .name {
     margin: $margin-name;

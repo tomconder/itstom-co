@@ -1,5 +1,4 @@
-$boulder: #777;
-$margin: 0 0 0 .5em;
+@import "../../styles/main";
 
 .title {
   flex-shrink: 0;
@@ -8,6 +7,6 @@ $margin: 0 0 0 .5em;
   vertical-align: top;
 }
 
-.name {
-  color: $boulder;
+svg {
+  margin-right: .16rem;
 }

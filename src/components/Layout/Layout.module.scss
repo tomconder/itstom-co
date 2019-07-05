@@ -1,19 +1,8 @@
-$amethyst: #A661C2;
-$light-wisteria: #CFABDE;
-$margin: 0;
+@import "../../styles/main";
 
 .base {
   display: flex;
   flex-direction: column;
-  font-family: Roboto, sans-serif;
+  font-family: sans-serif;
   height: 100vh;
-
-  a {
-    color: $amethyst;
-    margin: $margin;
-    border-bottom: 1px solid $light-wisteria;
-    padding: 0;
-    text-decoration: none;
-    vertical-align: baseline;
-  }
 }
