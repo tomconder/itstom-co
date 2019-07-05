@@ -1,6 +1,9 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { render, shallow } from 'enzyme'
+import { axe, toHaveNoViolations } from 'jest-axe'
 import Footer from '../../../../src/components/Footer'
+
+expect.extend(toHaveNoViolations)
 
 describe('Footer', () => {
   it('renders', () => {
@@ -8,5 +11,15 @@ describe('Footer', () => {
       <Footer />
     )
     expect(wrapper.exists()).toEqual(true)
+  })
+
+  it('a11y', async () => {
+    const wrapper = render(
+      <Footer />,
+    )
+
+    const result = await axe(wrapper.html())
+
+    expect(result).toHaveNoViolations()
   })
 })
