@@ -52,6 +52,7 @@
     }],
     "template-curly-spacing": ["error", "always"],
     "arrow-parens": ["error", "as-needed"],
+    "linebreak-style": ["error", "unix"],
     "react/prop-types": [
       "error",
       {

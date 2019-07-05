@@ -2,7 +2,7 @@
 const { deploy } = require('sftp-sync-deploy')
 require('dotenv').config()
 
-let config = {
+const config = {
   host: process.env.SFTP_HOST,
   port: process.env.SFTP_PORT,
   username: process.env.SFTP_USER,
