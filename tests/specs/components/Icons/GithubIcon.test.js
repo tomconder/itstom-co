@@ -1,7 +1,10 @@
 import React from 'react'
 import Chance from 'chance'
-import { shallow } from 'enzyme'
+import { render, shallow } from 'enzyme'
+import { axe, toHaveNoViolations } from 'jest-axe'
 import { GithubIcon } from '../../../../src/components/Icons'
+
+expect.extend(toHaveNoViolations)
 
 describe('GithubIcon', () => {
   it('renders', () => {
@@ -10,5 +13,16 @@ describe('GithubIcon', () => {
       <GithubIcon url={url} />
     )
     expect(wrapper.props().href).toEqual(url)
+  })
+
+  it('a11y', async () => {
+    const url = Chance().url()
+    const wrapper = render(
+      <GithubIcon url={url} />,
+    )
+
+    const result = await axe(wrapper.html())
+
+    expect(result).toHaveNoViolations()
   })
 })
