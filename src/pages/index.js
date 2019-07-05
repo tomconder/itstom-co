@@ -11,7 +11,7 @@ export default () => (
       <div className={styles.content}>
         <div className={styles.blurb}>
           <div className={styles.lighter}>Hi, it&apos;s Tom</div>
-          <h1>I am a full stack software engineer</h1>
+          <h1>I am an agile full stack software engineer</h1>
           <div className={styles.lighter}>I am a game designer</div>
         </div>
         <div className={styles.hero}>
