@@ -1,7 +1,7 @@
-import React from "react"
+import React from 'react'
 import PropTypes from 'prop-types'
 
-const ItsTomMugIcon = ({fill, size, ...otherProps}) => (
+const ItsTomMugIcon = ({ fill, size, ...otherProps }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={size}
@@ -50,4 +50,3 @@ ItsTomMugIcon.defaultProps = {
 }
 
 export default ItsTomMugIcon
-

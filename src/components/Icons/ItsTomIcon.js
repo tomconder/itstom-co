@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const ItsTomIcon = ({fill, size, ...otherProps}) => (
+const ItsTomIcon = ({ fill, size, ...otherProps }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     height={size}
