@@ -1,10 +1,11 @@
 import React from 'react'
 import * as PropTypes from 'prop-types'
+import { OutboundLink } from 'gatsby-plugin-gtag'
 import { Twitter } from 'react-feather'
 import styles from '../Header/Header.module.scss'
 
 const TwitterIcon = ({ url }) => (
-  <a
+  <OutboundLink
     aria-label="twitter"
     className={styles.link}
     href={url}
@@ -13,7 +14,7 @@ const TwitterIcon = ({ url }) => (
   >
     <Twitter size={24} />
     <span className={styles.name}>@tomconder</span>
-  </a>
+  </OutboundLink>
 )
 
 TwitterIcon.propTypes = {
