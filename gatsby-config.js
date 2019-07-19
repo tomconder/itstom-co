@@ -29,6 +29,13 @@ module.exports = {
       resolve: 'gatsby-plugin-gtag',
       options: {
         trackingId: process.env.GOOGLE_ANALYTICS_ID,
+        gtagConfig: {
+          anonymize_ip: true,
+          cookie_expires: 0,
+        },
+        pluginConfig: {
+          head: false,
+        },
       },
     },
   ],

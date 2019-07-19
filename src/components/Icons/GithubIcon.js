@@ -1,10 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { GitHub } from 'react-feather'
+import { OutboundLink } from 'gatsby-plugin-gtag'
 import styles from '../Header/Header.module.scss'
 
 const GithubIcon = ({ url }) => (
-  <a
+  <OutboundLink
     aria-label="github"
     className={styles.link}
     href={url}
@@ -13,7 +14,7 @@ const GithubIcon = ({ url }) => (
   >
     <GitHub size={24} />
     <span className={styles.name}>tomconder</span>
-  </a>
+  </OutboundLink>
 )
 
 GithubIcon.propTypes = {
