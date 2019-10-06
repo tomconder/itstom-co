@@ -1,6 +1,9 @@
 require('dotenv').config()
 
 module.exports = {
+  siteMetadata: {
+    siteUrl: 'https://itstom.co',
+  },
   plugins: [
     {
       resolve: 'gatsby-plugin-manifest',
@@ -36,6 +39,16 @@ module.exports = {
         pluginConfig: {
           head: false,
         },
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-sitemap',
+      options: {
+        serialize: ({ site, allSitePage }) => allSitePage.edges.map(edge => ({
+          url: site.siteMetadata.siteUrl + edge.node.path,
+          changefreq: 'monthly',
+          priority: 0.7,
+        })),
       },
     },
   ],
