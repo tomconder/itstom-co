@@ -19,14 +19,23 @@ module.exports = {
         icon: 'src/images/icon.png',
       },
     },
-    'gatsby-plugin-offline',
     {
       resolve: 'gatsby-plugin-nprogress',
       options: {
         color: '#99ee99',
       },
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${ __dirname }/src/images/`,
+        name: 'images',
+      },
+    },
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-offline',
     'gatsby-plugin-sass',
     'gatsby-plugin-styled-components',
     'gatsby-plugin-purgecss',
