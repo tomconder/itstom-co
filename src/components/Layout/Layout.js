@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { createGlobalStyle } from 'styled-components'
 import {
-  HeadProvider, Title, Link, Meta,
+  Title, Link, Meta,
 } from 'react-head'
 import { Header } from '../Header'
 import Footer from '../Footer'
@@ -25,15 +25,13 @@ const Layout = ({ children }) => {
   return (
     <div className={styles.base}>
       <GlobalStyle />
-      <HeadProvider>
-        <Meta charSet="utf-8" />
-        <Meta
-          name="description"
-          content="The personal web page of Tom Conder"
-        />
-        <Title lang="en">{title}</Title>
-        <Link rel="canonical" href="https://itstom.co/" />
-      </HeadProvider>
+      <Meta charSet="utf-8" />
+      <Meta
+        name="description"
+        content="The personal web page of Tom Conder"
+      />
+      <Title lang="en">{title}</Title>
+      <Link rel="canonical" href="https://itstom.co/" />
       <Header />
       {children}
       <Footer />
