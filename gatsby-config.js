@@ -34,7 +34,13 @@ module.exports = {
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
-    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-react-head',
+    {
+      resolve: 'gatsby-plugin-html-attributes',
+      options: {
+        lang: 'en',
+      },
+    },
     'gatsby-plugin-offline',
     'gatsby-plugin-sass',
     'gatsby-plugin-styled-components',
