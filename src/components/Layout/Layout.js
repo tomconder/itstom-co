@@ -30,6 +30,19 @@ const Layout = ({ children }) => {
         name="description"
         content="The personal web page of Tom Conder"
       />
+
+      <Meta property="og:description" content="The personal web  page of Tom Conder" />
+      <Meta property="og:title" content={title} />
+      <Meta property="og:url" content="https://itstom.co/" />
+      <Meta property="og:type" content="website" />
+      <Meta property="og:image" content="https://itstom.co/icons/icon-192x192.png" />
+
+      <Meta property="twitter:card" content="summary" />
+      <Meta property="twitter:description" content="The personal web  page of Tom Conder" />
+      <Meta property="twitter:title" content={title} />
+      <Meta property="twitter:url" content="https://itstom.co/" />
+      <Meta property="twitter:image" content="https://itstom.co/icons/icon-192x192.png" />
+
       <Title lang="en">{title}</Title>
       <Link rel="canonical" href="https://itstom.co/" />
       <Header />
