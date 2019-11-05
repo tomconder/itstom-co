@@ -68,5 +68,16 @@ module.exports = {
         })),
       },
     },
+    {
+      resolve: 'gatsby-plugin-csp',
+      options: {
+        mergeStyleHashes: false,
+        directives: {
+          'script-src': "'self' www.google-analytics.com www.googletagmanager.com",
+          'style-src': "'self' 'unsafe-inline'",
+          'img-src': "'self' data: www.google-analytics.com",
+        },
+      },
+    },
   ],
 }
