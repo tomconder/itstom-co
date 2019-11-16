@@ -12,7 +12,7 @@ const config = {
 }
 
 const options = {
-  concurrency: 50
+  concurrency: 50,
 }
 
 deploy(config, options).then(() => {
