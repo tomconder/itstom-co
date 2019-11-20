@@ -1,9 +1,8 @@
 # itstom-co
 
-[![GitHub tag](https://img.shields.io/github/tag/tomconder/itstom-co.svg?style=flat-square)](https://github.com/tomconder/itstom-co/tags)[![License](https://img.shields.io/github/license/tomconder/itstom-co.svg?style=flat-square)](https://github.com/tomconder/itstom-co/blob/develop/LICENSE)[![Build Status](https://travis-ci.com/tomconder/itstom-co.svg?branch=develop)](https://travis-ci.com/tomconder/itstom-co)
+[![GitHub tag](https://img.shields.io/github/tag/tomconder/itstom-co.svg?style=flat-square)](https://github.com/tomconder/itstom-co/tags) [![License](https://img.shields.io/github/license/tomconder/itstom-co.svg?style=flat-square)](https://github.com/tomconder/itstom-co/blob/develop/LICENSE) [![Build Status](https://travis-ci.com/tomconder/itstom-co.svg?branch=develop)](https://travis-ci.com/tomconder/itstom-co)
 
-This is the code to my website, [itstom.co](https://itstom.co). This is a personal project I used to build my web
-development skills.
+This is the code to my website, [itstom.co](https://itstom.co). This is a personal project to showcase my web development skills.
 
 ## Screenshot
 
