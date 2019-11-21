@@ -1,7 +1,7 @@
 {
   "name": "itstom-co",
   "description": "It's Tom",
-  "version": "1.0.5",
+  "version": "1.0.6-beta",
   "author": "Tom Conder <tomc@itstom.co>",
   "license": "MIT",
   "private": true,
