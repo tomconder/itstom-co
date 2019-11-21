@@ -1,9 +1,8 @@
 # itstom-co
 
-[![GitHub tag](https://img.shields.io/github/tag/tomconder/itstom-co.svg?style=flat-square)](https://github.com/tomconder/itstom-co/tags)[![License](https://img.shields.io/github/license/tomconder/itstom-co.svg?style=flat-square)](https://github.com/tomconder/itstom-co/blob/develop/LICENSE)
+[![GitHub tag](https://img.shields.io/github/tag/tomconder/itstom-co.svg?style=flat-square)](https://github.com/tomconder/itstom-co/tags) [![License](https://img.shields.io/github/license/tomconder/itstom-co.svg?style=flat-square)](https://github.com/tomconder/itstom-co/blob/develop/LICENSE) [![Build Status](https://travis-ci.com/tomconder/itstom-co.svg?branch=develop)](https://travis-ci.com/tomconder/itstom-co)
 
-This is the code to my website, [itstom.co](https://itstom.co). This is a personal project I used to build my web
-development skills.
+This is the code to my website, [itstom.co](https://itstom.co). This is a personal project to showcase my web development skills.
 
 ## Screenshot
 
@@ -20,13 +19,16 @@ development skills.
 
 ### Additional plugins and packages
 
-- [gatsby-plugin-gtag](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-gtag)
+- [gatsby-plugin-csp](https://github.com/bejamas/gatsby-plugin-csp)
+- [gatsby-plugin-gtag](https://github.com/flpvsk/gatsby-plugin-gtag)
 - [gatsby-plugin-manifest](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-manifest)
 - [gatsby-plugin-nprogress](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-nprogress)
 - [gatsby-plugin-offline](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-offline)
-- [gatsby-plugin-purgecss](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-purgecss)
-- [gatsby-plugin-react-helmet](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-react-helmet)
+- [gatsby-plugin-purgecss](https://github.com/anantoghosh/gatsby-plugin-purgecss)
+- [gatsby-plugin-react-head](https://github.com/bejamas/gatsby-plugin-react-head)
 - [gatsby-plugin-sass](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-sass)
+- [gatsby-plugin-sharp](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-sharp)
+- [gatsby-plugin-sitemap](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-sitemap)
 - [gatsby-plugin-styled-components](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-styled-components)
 
 ## Setup

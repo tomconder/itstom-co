@@ -36,6 +36,7 @@
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "react/jsx-one-expression-per-line": ["off"],
+    "react/jsx-props-no-spreading": ["error", { "exceptions": ["svg"] }],
     "no-unused-expressions": ["error", { "allowTaggedTemplates": true }],
     "no-var": "error",
     "no-unused-vars": 1,
@@ -52,7 +53,7 @@
     }],
     "template-curly-spacing": ["error", "always"],
     "arrow-parens": ["error", "as-needed"],
-    "linebreak-style": ["error", "unix"],
+    "linebreak-style": "off",
     "react/prop-types": [
       "error",
       {

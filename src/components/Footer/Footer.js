@@ -1,4 +1,5 @@
 import React from 'react'
+import { OutboundLink } from 'gatsby-plugin-gtag'
 import styles from './Footer.module.scss'
 
 const Footer = () => (
@@ -6,28 +7,28 @@ const Footer = () => (
     <div className={styles.note}>
       Built with
       {' '}
-      <a
+      <OutboundLink
         href="https://www.gatsbyjs.org"
         target="_blank"
         rel="noopener noreferrer"
       >
         Gatsby
-      </a>
+      </OutboundLink>
       {' '}
       and
       {' '}
-      <a href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
+      <OutboundLink href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
         React
-      </a>
+      </OutboundLink>
       . The source code for this website is available on
       {' '}
-      <a
+      <OutboundLink
         href="https://github.com/tomconder/itstom-co"
         target="_blank"
         rel="noopener noreferrer"
       >
         Github
-      </a>
+      </OutboundLink>
       .
     </div>
   </footer>

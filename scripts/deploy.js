@@ -11,7 +11,11 @@ const config = {
   remoteDir: 'public_html',
 }
 
-deploy(config).then(() => {
+const options = {
+  concurrency: 50,
+}
+
+deploy(config, options).then(() => {
   console.log('success!')
 }).catch(err => {
   console.error('error! ', err)
