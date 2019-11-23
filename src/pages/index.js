@@ -11,9 +11,11 @@ const Index = ({ data }) => (
     <main className={styles.main}>
       <div className={styles.content}>
         <div className={styles.blurb}>
-          <div className={styles.lighter}>Hi, it&apos;s Tom</div>
-          <h1>I am an agile full stack software engineer</h1>
-          <div className={styles.lighter}>I am a game designer</div>
+          <div className={styles.lighter}>
+            Creativity, leadership and mentoring
+          </div>
+          <h1>It&apos;s Tom</h1>
+          <div className={styles.lighter}>I have fun doing it</div>
         </div>
         <div className={styles.hero}>
           <Img fixed={data.tomWithCup.childImageSharp.fixed} alt="Tom with a cup" />
@@ -38,7 +40,7 @@ export const query = graphql`
   query {
     tomWithCup: file(relativePath: { eq: "tomcup.png" }) {
       childImageSharp {
-        fixed(width: 150)  {
+        fixed(width: 150, quality: 100)  {
             ...GatsbyImageSharpFixed_withWebp
         }
       }
