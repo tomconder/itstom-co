@@ -11,13 +11,14 @@
   },
   "scripts": {
     "build": "cross-env NODE_ENV=production gatsby build",
-    "clean": "rimraf .cache public coverage",
+    "clean": "rimraf .cache public coverage reports",
     "develop": "gatsby develop",
     "deploy": "node scripts/deploy",
     "lint": "eslint --ignore-path .gitignore -c .eslintrc.json --ext js,jsx .",
     "lint:fix": "eslint --ignore-path .gitignore -c .eslintrc.json --ext js,jsx --fix .",
     "lint:sass": "sass-lint --config sass-lint.yml --verbose --no-exit 'src/**/**.scss'",
     "serve": "gatsby serve",
+    "stryker": "cross-env NODE_ENV=test stryker run",
     "test": "cross-env NODE_ENV=test jest --no-cache",
     "test:coverage": "cross-env NODE_ENV=test jest --no-cache --coverage"
   },
@@ -58,6 +59,10 @@
     "@babel/plugin-proposal-optional-chaining": "^7.0.0",
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
+    "@stryker-mutator/core": "^2.4.0",
+    "@stryker-mutator/html-reporter": "^2.4.0",
+    "@stryker-mutator/javascript-mutator": "^2.4.0",
+    "@stryker-mutator/jest-runner": "^2.4.0",
     "babel-core": "^7.0.0-0",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.1.0",
@@ -84,34 +89,5 @@
     "rimraf": "^3.0.0",
     "sass-lint": "^1.12.1",
     "webpack": "^4.41.2"
-  },
-  "jest": {
-    "transform": {
-      "^.+\\.jsx?$": "<rootDir>/jest-preprocess.js"
-    },
-    "testRegex": "/.*(__tests__\\/.*)|(.*(test|spec))\\.jsx?$",
-    "moduleNameMapper": {
-      ".+\\.(css|styl|less|sass|scss)$": "identity-obj-proxy",
-      ".+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js"
-    },
-    "testPathIgnorePatterns": [
-      "node_modules",
-      ".cache"
-    ],
-    "coverageDirectory": "coverage",
-    "transformIgnorePatterns": [
-      "node_modules/(?!(gatsby)/)"
-    ],
-    "globals": {
-      "__PATH_PREFIX__": ""
-    },
-    "setupFiles": [
-      "raf/polyfill",
-      "<rootDir>/tests/setupTests.js",
-      "<rootDir>/loadershim.js"
-    ],
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ]
   }
 }
