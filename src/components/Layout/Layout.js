@@ -53,7 +53,7 @@ Layout.propTypes = {
 }
 
 Layout.defaultProps = {
-  children: {},
+  children: <main />,
 }
 
 export default Layout
