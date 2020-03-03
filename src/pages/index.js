@@ -15,7 +15,9 @@ const Index = ({ data }) => (
             Creativity, leadership and mentoring
           </div>
           <h1>It&apos;s Tom</h1>
-          <div className={styles.lighter}>I have fun doing it</div>
+          <div className={styles.lighter}>I strive for excellence and have fun
+            doing it
+          </div>
         </div>
         <div className={styles.hero}>
           <Img fixed={data.tomWithCup.childImageSharp.fixed} alt="Tom with a cup" />
