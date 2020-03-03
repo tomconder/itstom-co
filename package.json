@@ -51,7 +51,7 @@
     "react-head": "^3.1.1",
     "react-test-renderer": "^16.11.0",
     "sftp-sync-deploy": "^0.7.1",
-    "styled-components": "^4.0.2"
+    "styled-components": "^5.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
@@ -65,11 +65,11 @@
     "@stryker-mutator/jest-runner": "^2.4.0",
     "babel-core": "^7.0.0-0",
     "babel-eslint": "^10.0.1",
-    "babel-jest": "^24.1.0",
+    "babel-jest": "^25.1.0",
     "babel-plugin-styled-components": "^1.8.0",
     "chance": "^1.1.3",
     "check-prop-types": "^1.1.2",
-    "cross-env": "^6.0.0",
+    "cross-env": "^7.0.0",
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.15.1",
     "enzyme-to-json": "^3.4.3",
@@ -83,7 +83,7 @@
     "eslint-plugin-react": "^7.11.1",
     "gatsby-plugin-sitemap": "^2.2.19",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^24.1.0",
+    "jest": "^25.1.0",
     "jest-axe": "^3.1.1",
     "jest-enzyme": "^7.0.0",
     "node-sass": "^4.13.0",
