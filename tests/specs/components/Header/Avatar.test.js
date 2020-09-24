@@ -15,7 +15,7 @@ describe('Avatar', () => {
 
   it('a11y', async () => {
     const wrapper = render(
-      <Avatar />,
+      <nav><Avatar /></nav>
     )
 
     const result = await axe(wrapper.html())

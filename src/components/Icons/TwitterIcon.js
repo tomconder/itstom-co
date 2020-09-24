@@ -1,28 +1,17 @@
 import React from 'react'
-import * as PropTypes from 'prop-types'
-import { OutboundLink } from 'gatsby-plugin-gtag'
 import { Twitter } from 'react-feather'
-import styles from '../Header/Header.module.scss'
+import PropTypes from 'prop-types'
 
-const TwitterIcon = ({ url }) => (
-  <OutboundLink
-    aria-label="twitter"
-    className={styles.link}
-    href={url}
-    rel="noopener noreferrer"
-    target="_blank"
-  >
-    <Twitter size={24} />
-    <span className={styles.name}>@tomconder</span>
-  </OutboundLink>
+const TwitterIcon = ({ size }) => (
+  <Twitter size={size} />
 )
 
 TwitterIcon.propTypes = {
-  url: PropTypes.string,
+  size: PropTypes.number,
 }
 
 TwitterIcon.defaultProps = {
-  url: '',
+  size: 64,
 }
 
 export default TwitterIcon

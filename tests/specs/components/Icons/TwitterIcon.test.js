@@ -9,35 +9,27 @@ expect.extend(toHaveNoViolations)
 
 describe('TwitterIcon', () => {
   it('renders', () => {
-    const url = Chance().url()
+    const size = Chance().natural({ max: 256 })
     const wrapper = shallow(
-      <TwitterIcon url={url} />
+      <TwitterIcon size={size} />
     )
-    expect(wrapper.props().href).toEqual(url)
-  })
-
-  it('renders default url', () => {
-    const wrapper = shallow(
-      <TwitterIcon />
-    )
-    expect(wrapper.props().href).toEqual('')
+    expect(wrapper.exists()).toEqual(true)
   })
 
   it('check url prop type', () => {
     let result = checkPropTypes(TwitterIcon.propTypes,
-      { url: Chance().url() }, 'props', 'TwitterIcon')
+      { size: Chance().natural({ max: 256 }) }, 'props', 'GithubIcon')
     expect(result).toBeUndefined()
     result = checkPropTypes(TwitterIcon.propTypes,
-      { url: Chance().natural({ max: 256 }) }, 'props', 'TwitterIcon')
+      { size: Chance().url() }, 'props', 'TwitterIcon')
     expect(result).toEqual(
-      'Failed props type: Invalid props `url` of type `number` supplied to `TwitterIcon`, expected `string`.'
+      'Failed props type: Invalid props `size` of type `string` supplied to `TwitterIcon`, expected `number`.'
     )
   })
 
   it('a11y', async () => {
-    const url = Chance().url()
     const wrapper = render(
-      <TwitterIcon url={url} />,
+      <TwitterIcon />,
     )
 
     const result = await axe(wrapper.html())

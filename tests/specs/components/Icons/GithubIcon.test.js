@@ -9,28 +9,21 @@ expect.extend(toHaveNoViolations)
 
 describe('GithubIcon', () => {
   it('renders', () => {
-    const url = Chance().url()
+    const size = Chance().natural({ max: 256 })
     const wrapper = shallow(
-      <GithubIcon url={url} />
+      <GithubIcon size={size} />
     )
-    expect(wrapper.props().href).toEqual(url)
-  })
-
-  it('renders default url', () => {
-    const wrapper = shallow(
-      <GithubIcon />
-    )
-    expect(wrapper.props().href).toEqual('')
+    expect(wrapper.exists()).toEqual(true)
   })
 
   it('check url prop type', () => {
     let result = checkPropTypes(GithubIcon.propTypes,
-      { url: Chance().url() }, 'props', 'GithubIcon')
+      { size: Chance().natural({ max: 256 }) }, 'props', 'GithubIcon')
     expect(result).toBeUndefined()
     result = checkPropTypes(GithubIcon.propTypes,
-      { url: Chance().natural({ max: 256 }) }, 'props', 'GithubIcon')
+      { size: Chance().url() }, 'props', 'GithubIcon')
     expect(result).toEqual(
-      'Failed props type: Invalid props `url` of type `number` supplied to `GithubIcon`, expected `string`.'
+      'Failed props type: Invalid props `size` of type `string` supplied to `GithubIcon`, expected `number`.'
     )
   })
 
