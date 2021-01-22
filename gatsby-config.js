@@ -20,12 +20,6 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-nprogress',
-      options: {
-        color: '#99ee99',
-      },
-    },
-    {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${ __dirname }/src/images/`,
