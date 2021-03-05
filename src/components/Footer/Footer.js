@@ -1,34 +1,33 @@
 import React from 'react'
-import { OutboundLink } from 'gatsby-plugin-gtag'
-import styles from './Footer.module.scss'
+import { note } from './Footer.module.scss'
 
 const Footer = () => (
   <footer>
-    <div className={styles.note}>
+    <div className={note}>
       Built with
       {' '}
-      <OutboundLink
+      <a
         href="https://www.gatsbyjs.org"
         target="_blank"
         rel="noopener noreferrer"
       >
         Gatsby
-      </OutboundLink>
+      </a>
       {' '}
       and
       {' '}
-      <OutboundLink href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
+      <a href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
         React
-      </OutboundLink>
+      </a>
       . The source code for this website is available on
       {' '}
-      <OutboundLink
+      <a
         href="https://github.com/tomconder/itstom-co"
         target="_blank"
         rel="noopener noreferrer"
       >
         Github
-      </OutboundLink>
+      </a>
       .
     </div>
   </footer>

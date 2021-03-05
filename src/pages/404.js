@@ -1,16 +1,18 @@
 import React from 'react'
 import classNames from 'classnames'
 import Layout from '../components/Layout'
-import styles from './404.module.scss'
+import { main, content, message } from './404.module.scss'
 import { BrainJarIcon } from '../components/Icons'
 
-export default () => (
+const NotFound = () => (
   <Layout>
-    <main className={styles.main}>
-      <div className={classNames(styles.content, styles.message)}>
+    <main className={main}>
+      <div className={classNames(content, message)}>
         <BrainJarIcon size={128} />
         <h2>Oops! That isn&apos;t right...</h2>
       </div>
     </main>
   </Layout>
 )
+
+export default NotFound

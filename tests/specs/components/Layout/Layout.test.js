@@ -18,7 +18,7 @@ describe('Layout', () => {
   })
 
   it('renders default children prop', () => {
-    const wrapper = mount(
+    const wrapper = shallow(
       <HeadProvider>
         <Layout />
       </HeadProvider>

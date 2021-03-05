@@ -1,5 +1,5 @@
 import React from 'react'
-import { mount, render, shallow } from 'enzyme'
+import { render, shallow } from 'enzyme'
 import { axe, toHaveNoViolations } from 'jest-axe'
 import Footer from '../../../../src/components/Footer'
 
@@ -14,21 +14,21 @@ describe('Footer', () => {
   })
 
   it('renders with space before "Built With" links', () => {
-    const wrapper = mount(
+    const wrapper = render(
       <Footer />
     )
     expect(wrapper.text()).toContain('Built with ')
   })
 
   it('renders with spaces between "Built With" links', () => {
-    const wrapper = mount(
+    const wrapper = render(
       <Footer />
     )
     expect(wrapper.text()).toContain('Gatsby and React')
   })
 
   it('renders with spaces before "Source Code" link', () => {
-    const wrapper = mount(
+    const wrapper = render(
       <Footer />
     )
     expect(wrapper.text()).toContain('on Github')

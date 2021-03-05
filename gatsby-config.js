@@ -27,6 +27,7 @@ module.exports = {
       },
     },
     'gatsby-transformer-sharp',
+    'gatsby-plugin-image',
     'gatsby-plugin-sharp',
     'gatsby-plugin-react-head',
     {
@@ -40,19 +41,6 @@ module.exports = {
     'gatsby-plugin-styled-components',
     'gatsby-plugin-purgecss',
     {
-      resolve: 'gatsby-plugin-gtag',
-      options: {
-        trackingId: process.env.GOOGLE_ANALYTICS_ID,
-        gtagConfig: {
-          anonymize_ip: true,
-          cookie_expires: 0,
-        },
-        pluginConfig: {
-          head: false,
-        },
-      },
-    },
-    {
       resolve: 'gatsby-plugin-sitemap',
       options: {
         serialize: ({ site, allSitePage }) => allSitePage.edges.map(edge => ({
@@ -60,17 +48,6 @@ module.exports = {
           changefreq: 'monthly',
           priority: 0.7,
         })),
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-csp',
-      options: {
-        mergeStyleHashes: false,
-        directives: {
-          'script-src': "'self' www.google-analytics.com www.googletagmanager.com",
-          'style-src': "'self' 'unsafe-inline'",
-          'img-src': "'self' data: www.google-analytics.com",
-        },
       },
     },
   ],

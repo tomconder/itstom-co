@@ -6,7 +6,7 @@ import {
 } from 'react-head'
 import { Header } from '../Header'
 import Footer from '../Footer'
-import styles from './Layout.module.scss'
+import { base } from './Layout.module.scss'
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
   const title = "It's Tom"
 
   return (
-    <div className={styles.base}>
+    <div className={base}>
       <GlobalStyle />
       <Meta charSet="utf-8" />
       <Meta
