@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { graphql } from 'gatsby'
-import { GatsbyImage } from 'gatsby-plugin-image'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import PropTypes from 'prop-types'
 import Layout from '../components/Layout'
 import {
@@ -23,7 +23,7 @@ const Index = ({ data }) => (
         </div>
         <div className={hero}>
           <GatsbyImage
-            image={data.tomWithCup.childImageSharp.gatsbyImageData}
+            image={getImage(data.tomWithCup.childImageSharp)}
             alt="Tom with a cup"
           />
         </div>
@@ -46,7 +46,12 @@ export default Index
 export const query = graphql`{
   tomWithCup: file(relativePath: {eq: "tomcup.png"}) {
     childImageSharp {
-      gatsbyImageData(width: 150, quality: 100, layout: CONSTRAINED)
+      gatsbyImageData(
+        width: 150,
+        quality: 100,
+        placeholder: BLURRED,
+        formats: [AUTO, WEBP, AVIF]
+      )
     }
   }
 }
