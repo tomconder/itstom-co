@@ -1,5 +1,6 @@
+/* eslint-disable react/function-component-definition */
 import React from 'react'
-import styles from './Header.module.scss'
+import * as styles from './Header.module.scss'
 import { GithubIcon, TwitterIcon } from '../Icons'
 import Avatar from './Avatar'
 

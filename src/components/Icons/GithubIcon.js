@@ -1,21 +1,23 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { GitHub } from 'react-feather'
-import { OutboundLink } from 'gatsby-plugin-gtag'
-import styles from '../Header/Header.module.scss'
+import { Link } from 'gatsby'
+import * as styles from '../Header/Header.module.scss'
 
-const GithubIcon = ({ url }) => (
-  <OutboundLink
-    aria-label="github"
-    className={styles.link}
-    href={url}
-    rel="noopener noreferrer"
-    target="_blank"
-  >
-    <GitHub size={24} />
-    <span className={styles.name}>tomconder</span>
-  </OutboundLink>
-)
+function GithubIcon({ url }) {
+  return (
+    <Link
+      aria-label="github"
+      className={styles.link}
+      to={url}
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <GitHub size={24} />
+      <span className={styles.name}>tomconder</span>
+    </Link>
+  )
+}
 
 GithubIcon.propTypes = {
   url: PropTypes.string,
