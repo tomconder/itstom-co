@@ -1,7 +1,6 @@
 import React from 'react'
 import { render, shallow } from 'enzyme'
 import { axe, toHaveNoViolations } from 'jest-axe'
-import { HeadProvider } from 'react-head'
 import Layout from '../../../../src/components/Layout'
 
 expect.extend(toHaveNoViolations)
@@ -18,11 +17,9 @@ describe('Layout', () => {
 
   it('a11y', async () => {
     const wrapper = render(
-      <HeadProvider>
-        <Layout>
-          <div className="unique" />
-        </Layout>
-      </HeadProvider>
+      <Layout>
+        <div className="unique" />
+      </Layout>
     )
 
     const result = await axe(wrapper.html())

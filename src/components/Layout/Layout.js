@@ -1,12 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { createGlobalStyle } from 'styled-components'
-import {
-  Title, Link, Meta,
-} from 'react-head'
+import { Helmet } from 'react-helmet-async'
 import { Header } from '../Header'
 import Footer from '../Footer'
-import styles from './Layout.module.scss'
+import * as styles from './Layout.module.scss'
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -19,28 +17,30 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
-const Layout = ({ children }) => {
+function Layout({ children }) {
   const title = "It's Tom"
 
   return (
     <div className={styles.base}>
       <GlobalStyle />
-      <Meta charSet="utf-8" />
-      <Meta
-        name="description"
-        content="The personal web page of Tom Conder"
-      />
+      <Helmet>
+        <meta charSet="utf-8" />
+        <meta
+          name="description"
+          content="The personal web page of Tom Conder"
+        />
 
-      <Meta property="og:description" content="The personal web  page of Tom Conder" />
-      <Meta property="og:title" content={title} />
-      <Meta property="og:url" content="https://itstom.co/" />
-      <Meta property="og:type" content="website" />
-      <Meta property="og:image" content="https://itstom.co/icons/icon-192x192.png" />
-      <Meta property="twitter:card" content="summary" />
-      <Meta property="twitter:site" content="@tomconder" />
+        <meta property="og:description" content="The personal web  page of Tom Conder" />
+        <meta property="og:title" content={title} />
+        <meta property="og:url" content="https://itstom.co/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://itstom.co/icons/icon-192x192.png" />
+        <meta property="twitter:card" content="summary" />
+        <meta property="twitter:site" content="@tomconder" />
 
-      <Title lang="en">{title}</Title>
-      <Link rel="canonical" href="https://itstom.co/" />
+        <title lang="en">{title}</title>
+        <link rel="canonical" href="https://itstom.co/" />
+      </Helmet>
       <Header />
       {children}
       <Footer />
