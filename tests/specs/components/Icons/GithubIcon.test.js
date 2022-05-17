@@ -8,11 +8,10 @@ expect.extend(toHaveNoViolations)
 
 describe('GithubIcon', () => {
   it('renders', () => {
-    const url = Chance().url()
     const wrapper = shallow(
-      <GithubIcon url={url} />
+      <GithubIcon />
     )
-    expect(wrapper.props().href).toEqual(url)
+    expect(wrapper.exists()).toEqual(true)
   })
 
   it('a11y', async () => {

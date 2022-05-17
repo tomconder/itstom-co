@@ -12,7 +12,7 @@ describe('TwitterIcon', () => {
     const wrapper = shallow(
       <TwitterIcon url={url} />
     )
-    expect(wrapper.props().href).toEqual(url)
+    expect(wrapper.exists()).toEqual(true)
   })
 
   it('a11y', async () => {
