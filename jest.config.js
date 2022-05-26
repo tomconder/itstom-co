@@ -10,10 +10,11 @@ module.exports = {
   testPathIgnorePatterns: [
     'node_modules',
     '.cache',
+    '<rootDir>.*/public',
   ],
   coverageDirectory: 'coverage',
   transformIgnorePatterns: [
-    'node_modules/(?!(gatsby)/)',
+    'node_modules/(?!(gatsby|gatsby-script)/)',
   ],
   globals: {
     __PATH_PREFIX__: '',
