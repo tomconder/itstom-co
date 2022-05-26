@@ -27,6 +27,7 @@ module.exports = {
       },
     },
     'gatsby-plugin-react-helmet-async',
+    'gatsby-plugin-image',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {

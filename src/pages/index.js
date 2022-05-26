@@ -1,12 +1,10 @@
 import React from 'react'
 
-import { graphql } from 'gatsby'
-import { GatsbyImage } from 'gatsby-plugin-image'
-import PropTypes from 'prop-types'
+import { StaticImage } from 'gatsby-plugin-image'
 import Layout from '../components/Layout'
 import * as styles from './index.module.scss'
 
-function Index({ data }) {
+function Index() {
   return (
     <Layout>
       <main className={styles.main}>
@@ -17,7 +15,14 @@ function Index({ data }) {
             <div className={styles.lighter}>I am a game designer</div>
           </div>
           <div className={styles.hero}>
-            <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} alt="Tom with a cup" />
+            <StaticImage
+              src="../images/tomcup.png"
+              alt="Tom with a cup"
+              placeholder="blurred"
+              layout="fixed"
+              width={150}
+              height={200}
+            />
           </div>
         </div>
       </main>
@@ -25,23 +30,4 @@ function Index({ data }) {
   )
 }
 
-Index.propTypes = {
-  // eslint-disable-next-line react/forbid-prop-types
-  data: PropTypes.object,
-}
-
-Index.defaultProps = {
-  data: {},
-}
-
 export default Index
-
-export const query = graphql`
-  query {
-    file(relativePath: { eq: "tomcup.png" }) {
-      childImageSharp {
-        gatsbyImageData(layout: FIXED)
-      }
-    }
-  }
-`
