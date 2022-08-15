@@ -39,6 +39,7 @@
     "gatsby-source-filesystem": "^4.15.0",
     "gatsby-transformer-sharp": "^4.15.0",
     "jest-environment-jsdom": "^28.1.0",
+    "jpeg-js": "^0.4.4",
     "prop-types": "^15.6.2",
     "raf": "^3.4.1",
     "react": "^17.0.1",
