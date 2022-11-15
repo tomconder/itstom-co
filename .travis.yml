@@ -4,10 +4,6 @@ node_js:
 
 cache: yarn
 
-before_script:
-  - npm i -g gatsby-cli
-  - yarn
-
 script:
   - yarn clean
   - yarn lint
