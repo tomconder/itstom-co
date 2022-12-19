@@ -39,7 +39,6 @@ module.exports = {
     'gatsby-plugin-offline',
     'gatsby-plugin-sass',
     'gatsby-plugin-styled-components',
-    'gatsby-plugin-purgecss',
     'gatsby-plugin-sitemap',
   ],
 }
