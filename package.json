@@ -100,6 +100,7 @@
     "jsdom": "20.0.1",
     "minimatch": "3.1.2",
     "parse-path": "7.0.0",
-    "parse-url": "8.1.0"
+    "parse-url": "8.1.0",
+    "loader-utils": "^2.0.4"
   }
 }
