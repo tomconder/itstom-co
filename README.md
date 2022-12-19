@@ -13,10 +13,6 @@ This is the code to my website, [itstom.co](https://itstom.co). This is a person
 - [Gatsby](https://github.com/gatsbyjs/gatsby)
 - [React](https://github.com/facebook/react)
 
-### Starting point
-
-- [gatsby-starter-hello-world](https://github.com/gatsbyjs/gatsby-starter-hello-world)
-
 ## Setup
 
 ```bash
