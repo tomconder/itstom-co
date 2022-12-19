@@ -23,6 +23,7 @@
     "test:coverage": "cross-env NODE_ENV=test jest --no-cache --coverage"
   },
   "dependencies": {
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.8.0",
     "classnames": "^2.3.2",
     "cross-fetch": "^3.1.5",
     "dotenv": "^16.0.3",
@@ -59,6 +60,7 @@
     "@babel/core": "^7.18.2",
     "@babel/plugin-proposal-class-properties": "^7.17.12",
     "@babel/plugin-proposal-optional-chaining": "^7.17.12",
+    "@babel/plugin-transform-runtime": "^7.19.6",
     "@babel/preset-env": "^7.18.2",
     "@babel/preset-react": "^7.17.12",
     "@stryker-mutator/core": "^6.0.2",
@@ -71,7 +73,6 @@
     "chance": "^1.1.9",
     "cross-env": "^7.0.3",
     "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.6",
     "enzyme-to-json": "^3.4.3",
     "eslint": "^8.16.0",
     "eslint-config-airbnb": "^19.0.4",

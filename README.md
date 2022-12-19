@@ -13,22 +13,6 @@ This is the code to my website, [itstom.co](https://itstom.co). This is a person
 - [Gatsby](https://github.com/gatsbyjs/gatsby)
 - [React](https://github.com/facebook/react)
 
-### Starting point
-
-- [gatsby-starter-hello-world](https://github.com/gatsbyjs/gatsby-starter-hello-world)
-
-### Additional plugins and packages
-
-- [gatsby-plugin-csp](https://github.com/bejamas/gatsby-plugin-csp)
-- [gatsby-plugin-gtag](https://github.com/flpvsk/gatsby-plugin-gtag)
-- [gatsby-plugin-manifest](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-manifest)
-- [gatsby-plugin-offline](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-offline)
-- [gatsby-plugin-purgecss](https://github.com/anantoghosh/gatsby-plugin-purgecss)
-- [gatsby-plugin-sass](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-sass)
-- [gatsby-plugin-sharp](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-sharp)
-- [gatsby-plugin-sitemap](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-sitemap)
-- [gatsby-plugin-styled-components](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-styled-components)
-
 ## Setup
 
 ```bash
