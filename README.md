@@ -20,7 +20,6 @@ This is the code to my website, [itstom.co](https://itstom.co). This is a person
 ### Additional plugins and packages
 
 - [gatsby-plugin-csp](https://github.com/bejamas/gatsby-plugin-csp)
-- [gatsby-plugin-gtag](https://github.com/flpvsk/gatsby-plugin-gtag)
 - [gatsby-plugin-manifest](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-manifest)
 - [gatsby-plugin-offline](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-offline)
 - [gatsby-plugin-purgecss](https://github.com/anantoghosh/gatsby-plugin-purgecss)
