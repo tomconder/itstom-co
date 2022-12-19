@@ -41,7 +41,7 @@
     "gatsby-transformer-sharp": "^4.15.0",
     "jest-environment-jsdom": "^28.1.0",
     "jpeg-js": "^0.4.4",
-    "jsdom": "^20.0.1",
+    "jsdom": "^20.0.3",
     "parse-path": "^7.0.0",
     "parse-url": "8.1.0",
     "prop-types": "^15.6.2",
