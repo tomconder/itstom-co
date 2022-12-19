@@ -77,7 +77,6 @@
     "eslint-config-airbnb": "^19.0.4",
     "eslint-import-resolver-webpack": "^0.13.2",
     "eslint-plugin-babel": "^5.2.1",
-    "eslint-plugin-graphql": "^4.0.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-promise": "^6.0.0",
